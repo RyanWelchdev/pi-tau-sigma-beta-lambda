@@ -7,9 +7,9 @@ import Initiation from './pages/Initiation';
 import About from './pages/About';
 import Officers from './pages/Officers';
 import Alumni from './pages/Alumni';
+import Contact from './pages/Contact';
 
 // Placeholder components for other pages
-const Contact = () => <div className="py-20 text-center">Contact Page Coming Soon</div>;
 
 export default function App() {
   return (
