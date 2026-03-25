@@ -47,6 +47,13 @@ export default function About() {
             excellence, strengthen chapter continuity, and support the development of
             mechanical engineering students and alumni.
           </p>
+          <div className="mt-10 flex justify-center">
+  <img
+    src="/images/crest.png"
+    alt="Pi Tau Sigma crest"
+    className="h-28 w-auto object-contain"
+  />
+</div>
         </div>
       </section>
 
