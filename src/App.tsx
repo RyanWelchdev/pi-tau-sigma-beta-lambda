@@ -6,9 +6,9 @@ import Membership from './pages/Membership';
 import Initiation from './pages/Initiation';
 import About from './pages/About';
 import Officers from './pages/Officers';
+import Alumni from './pages/Alumni';
 
 // Placeholder components for other pages
-const Alumni = () => <div className="py-20 text-center">Alumni Page Coming Soon</div>;
 const Contact = () => <div className="py-20 text-center">Contact Page Coming Soon</div>;
 
 export default function App() {
