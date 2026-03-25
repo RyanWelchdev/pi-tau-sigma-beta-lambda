@@ -1,81 +1,117 @@
-import { Link } from 'react-router-dom';
-import { Menu, X, GraduationCap } from 'lucide-react';
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { Menu, X, GraduationCap } from 'lucide-react';
+
+const navItems = [
+  { label: 'About', to: '/about' },
+  { label: 'Membership', to: '/membership' },
+  { label: 'Initiation', to: '/initiation' },
+  { label: 'Officers', to: '/officers' },
+  { label: 'Alumni', to: '/alumni' },
+  { label: 'Contact', to: '/contact' },
+];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  const navItems = [
-    { name: 'About', path: '/about' },
-    { name: 'Membership', path: '/membership' },
-    { name: 'Initiation', path: '/initiation' },
-    { name: 'Officers', path: '/officers' },
-    { name: 'Alumni', path: '/alumni' },
-    { name: 'Contact', path: '/contact' },
-  ];
+  const linkBase =
+    'text-sm font-semibold transition-colors duration-200';
+  const desktopLink =
+    'text-slate-600 hover:text-slate-900';
+  const activeLink =
+    'text-slate-900';
 
   return (
-    <nav className="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className="bg-niu-red p-2 rounded-lg group-hover:bg-niu-black transition-colors duration-300">
-                <GraduationCap className="h-6 w-6 text-white" />
+        <div className="h-22 flex items-center justify-between">
+          {/* Brand */}
+          <Link
+            to="/"
+            className="flex items-center gap-4 shrink-0"
+            onClick={() => setMobileOpen(false)}
+          >
+            <div className="h-12 w-12 rounded-xl bg-niu-red flex items-center justify-center shadow-sm shrink-0">
+              <GraduationCap className="h-6 w-6 text-white" />
+            </div>
+
+            <div className="leading-tight">
+              <div className="flex flex-wrap items-baseline gap-x-2">
+                <span className="text-2xl font-serif font-bold text-slate-950 leading-none">
+                  Pi Tau Sigma
+                </span>
               </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-serif font-bold text-niu-black leading-tight tracking-tight">Pi Tau Sigma</span>
-                <span className="text-xs font-sans font-semibold text-niu-red uppercase tracking-widest">Beta Lambda Chapter • NIU</span>
-              </div>
-            </Link>
-          </div>
+              <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em] text-niu-red mt-1">
+                Beta Lambda Chapter • NIU
+              </p>
+            </div>
+          </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.name} to={item.path} className="nav-link">
-                {item.name}
-              </Link>
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className={({ isActive }) =>
+                  `${linkBase} ${isActive ? activeLink : desktopLink}`
+                }
+              >
+                {item.label}
+              </NavLink>
             ))}
-            <Link to="/membership" className="bg-niu-red text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-niu-black transition-all duration-300">
-              Eligibility
-            </Link>
-          </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-600 hover:text-niu-red p-2"
+            <Link
+              to="/membership"
+              className="inline-flex items-center justify-center rounded-full bg-niu-red px-5 py-3 text-sm font-bold text-white shadow-sm hover:opacity-90 transition"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+              View Eligibility
+            </Link>
+          </nav>
+
+          {/* Mobile Toggle */}
+          <button
+            type="button"
+            className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 transition"
+            onClick={() => setMobileOpen((prev) => !prev)}
+            aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          >
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </div>
 
-      {/* Mobile Nav */}
-      {isOpen && (
-        <div className="md:hidden bg-white border-t border-slate-100 py-4 px-4 space-y-2 shadow-lg">
-          {navItems.map((item) => (
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="lg:hidden border-t border-slate-200 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-2">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                onClick={() => setMobileOpen(false)}
+                className={({ isActive }) =>
+                  `rounded-lg px-3 py-3 text-sm font-semibold transition ${
+                    isActive
+                      ? 'bg-slate-100 text-slate-900'
+                      : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                  }`
+                }
+              >
+                {item.label}
+              </NavLink>
+            ))}
+
             <Link
-              key={item.name}
-              to={item.path}
-              onClick={() => setIsOpen(false)}
-              className="block px-4 py-3 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-niu-red rounded-lg"
+              to="/membership"
+              onClick={() => setMobileOpen(false)}
+              className="mt-2 inline-flex items-center justify-center rounded-full bg-niu-red px-5 py-3 text-sm font-bold text-white shadow-sm hover:opacity-90 transition"
             >
-              {item.name}
+              View Eligibility
             </Link>
-          ))}
-          <Link
-            to="/membership"
-            onClick={() => setIsOpen(false)}
-            className="block px-4 py-3 text-base font-bold text-white bg-niu-red rounded-lg text-center"
-          >
-            View Eligibility
-          </Link>
+          </div>
         </div>
       )}
-    </nav>
+    </header>
   );
 }
