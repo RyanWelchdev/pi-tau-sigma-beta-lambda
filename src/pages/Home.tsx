@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, GraduationCap, Users, Award, BookOpen } from 'lucide-react';
+import { ArrowRight, Users, Award, BookOpen, CalendarDays } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -8,9 +8,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[85vh] flex items-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=2070" 
-            alt="Engineering Lab" 
+          <img
+            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=2070"
+            alt="Engineering environment"
             className="w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
           />
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -28,16 +28,20 @@ export default function Home() {
               Northern Illinois University
             </span>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6">
-              Fostering Engineering <span className="text-niu-red">Excellence.</span>
+              Beta Lambda Chapter of <span className="text-niu-red">Pi Tau Sigma</span>
             </h1>
             <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-              Welcome to the Beta Lambda Chapter of Pi Tau Sigma. We recognize the top mechanical engineering talent at NIU, bridging the gap between academic study and professional practice.
+              Recognizing academic excellence, leadership, integrity, and sound engineering ability
+              in mechanical engineering students at NIU.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/membership" className="btn-primary flex items-center justify-center gap-2">
                 Check Eligibility <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link to="/about" className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-6 py-3 rounded-md font-medium hover:bg-white/20 transition-all duration-200 text-center">
+              <Link
+                to="/about"
+                className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-6 py-3 rounded-md font-medium hover:bg-white/20 transition-all duration-200 text-center"
+              >
                 Learn More
               </Link>
             </div>
@@ -49,58 +53,64 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">A Legacy of Achievement</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+              A Legacy of Achievement
+            </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Pi Tau Sigma members are chosen on a basis of sound engineering ability, scholarship, personality, and probable future success.
+              Pi Tau Sigma recognizes students on the basis of scholarship, leadership, service,
+              integrity, and sound engineering ability.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="card group"
-            >
+            <motion.div whileHover={{ y: -10 }} className="card group">
               <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-niu-red transition-colors duration-300">
                 <Award className="h-6 w-6 text-niu-red group-hover:text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Academic Honor</h3>
               <p className="text-slate-600 mb-6">
-                Recognition for the top 25% of the junior class and top 33% of the senior class in Mechanical Engineering.
+                Undergraduate membership is based on national Pi Tau Sigma standards, including
+                ranking in the upper 25% of a student’s classification and a qualifying GPA.
               </p>
-              <Link to="/membership" className="text-niu-red font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+              <Link
+                to="/membership"
+                className="text-niu-red font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+              >
                 View Requirements <ArrowRight className="h-4 w-4" />
               </Link>
             </motion.div>
 
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="card group"
-            >
+            <motion.div whileHover={{ y: -10 }} className="card group">
               <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-niu-red transition-colors duration-300">
                 <Users className="h-6 w-6 text-niu-red group-hover:text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Professional Network</h3>
+              <h3 className="text-xl font-bold mb-3">Alumni & Network</h3>
               <p className="text-slate-600 mb-6">
-                Connect with a lifelong network of peers, faculty, and alumni who are leaders in the engineering industry.
+                Beta Lambda is rebuilding alumni connections to strengthen chapter history,
+                professional relationships, and long-term continuity.
               </p>
-              <Link to="/alumni" className="text-niu-red font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-                Alumni Network <ArrowRight className="h-4 w-4" />
+              <Link
+                to="/alumni"
+                className="text-niu-red font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+              >
+                Explore Alumni <ArrowRight className="h-4 w-4" />
               </Link>
             </motion.div>
 
-            <motion.div 
-              whileHover={{ y: -10 }}
-              className="card group"
-            >
+            <motion.div whileHover={{ y: -10 }} className="card group">
               <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-niu-red transition-colors duration-300">
-                <BookOpen className="h-6 w-6 text-niu-red group-hover:text-white" />
+                <CalendarDays className="h-6 w-6 text-niu-red group-hover:text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Chapter Legacy</h3>
               <p className="text-slate-600 mb-6">
-                The Beta Lambda chapter has a rich history at NIU, fostering a community of excellence since its charter.
+                Beta Lambda was founded on February 24, 2018, and continues to build a strong
+                chapter tradition at Northern Illinois University.
               </p>
-              <Link to="/about" className="text-niu-red font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-                Our History <ArrowRight className="h-4 w-4" />
+              <Link
+                to="/about"
+                className="text-niu-red font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+              >
+                Learn About the Chapter <ArrowRight className="h-4 w-4" />
               </Link>
             </motion.div>
           </div>
@@ -112,20 +122,26 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-8">Our Mission at NIU</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-8">
+                Our Mission at NIU
+              </h2>
               <div className="space-y-6">
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  The Beta Lambda Chapter is dedicated to recognizing the academic achievements of NIU mechanical engineering students while providing a platform for professional growth.
+                  The Beta Lambda Chapter exists to recognize excellence in mechanical engineering
+                  students at NIU and to support a chapter culture built on scholarship,
+                  leadership, service, integrity, and continuity.
                 </p>
                 <p className="text-slate-600">
-                  We bridge the gap between rigorous academic study and professional industry practice, ensuring our members are prepared for the challenges of the modern engineering landscape.
+                  As the Pi Tau Sigma chapter at Northern Illinois University, Beta Lambda also
+                  serves as a long-term home for chapter records, alumni connection, and officer
+                  transition from year to year.
                 </p>
                 <ul className="space-y-4">
                   {[
                     "Recognition of academic excellence",
-                    "Professional development workshops",
-                    "Community service and tutoring",
-                    "Lifelong alumni connections"
+                    "Leadership and chapter involvement",
+                    "Responsible chapter continuity",
+                    "Stronger alumni connection over time"
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
                       <div className="h-2 w-2 rounded-full bg-niu-red"></div>
@@ -135,19 +151,57 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=2070" 
-                  alt="Students collaborating" 
+                <img
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=2070"
+                  alt="Students collaborating"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-niu-red text-white p-8 rounded-xl shadow-xl hidden md:block">
-                <p className="text-4xl font-serif font-bold mb-1">63+</p>
-                <p className="text-xs font-bold uppercase tracking-widest opacity-80">Initiated Members & Alumni</p>
+                <p className="text-4xl font-serif font-bold mb-1">63</p>
+                <p className="text-xs font-bold uppercase tracking-widest opacity-80">
+                  Initiated Members & Alumni
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats / Legacy Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center">
+              <p className="text-4xl font-serif font-bold text-slate-900 mb-2">2018</p>
+              <p className="text-sm uppercase tracking-widest text-slate-500 font-semibold">
+                Founded
+              </p>
+              <p className="text-slate-600 mt-4">Beta Lambda was founded on February 24, 2018.</p>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center">
+              <p className="text-4xl font-serif font-bold text-slate-900 mb-2">63</p>
+              <p className="text-sm uppercase tracking-widest text-slate-500 font-semibold">
+                Total Members & Alumni
+              </p>
+              <p className="text-slate-600 mt-4">
+                Based on current chapter records of initiated members and alumni.
+              </p>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center">
+              <p className="text-4xl font-serif font-bold text-slate-900 mb-2">50+</p>
+              <p className="text-sm uppercase tracking-widest text-slate-500 font-semibold">
+                Alumni Connections
+              </p>
+              <p className="text-slate-600 mt-4">
+                A growing alumni network is helping strengthen chapter continuity and outreach.
+              </p>
             </div>
           </div>
         </div>
@@ -156,11 +210,17 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-niu-red">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-8">Ready to Join the Elite?</h2>
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-8">
+            Interested in Pi Tau Sigma?
+          </h2>
           <p className="text-red-100 text-xl mb-10 max-w-2xl mx-auto">
-            If you are a top-performing Mechanical Engineering student at NIU, we want to hear from you.
+            Learn more about eligibility, initiation, and what membership in the Beta Lambda
+            Chapter means at NIU.
           </p>
-          <Link to="/membership" className="inline-block bg-white text-niu-red px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-100 transition-all shadow-xl">
+          <Link
+            to="/membership"
+            className="inline-block bg-white text-niu-red px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-100 transition-all shadow-xl"
+          >
             Check Your Eligibility
           </Link>
         </div>
