@@ -11,7 +11,7 @@ export default function Home() {
           <img
             src="/images/PiTauSigma_20260213-01f.jpg"
             alt="Engineering environment"
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover object-[68%_center] opacity-40"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>
