@@ -38,7 +38,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link to="/membership" className="bg-niu-red text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-niu-black transition-all duration-300">
-              Join Us
+              Eligibility
             </Link>
           </div>
 
@@ -72,7 +72,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             className="block px-4 py-3 text-base font-bold text-white bg-niu-red rounded-lg text-center"
           >
-            Join Us
+            View Eligibility
           </Link>
         </div>
       )}
