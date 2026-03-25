@@ -9,7 +9,7 @@ export default function Home() {
       <section className="relative h-[85vh] flex items-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=2070"
+            src="/images/PiTauSigma_20260213-01f.jpg"
             alt="Engineering environment"
             className="w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=2070"
+                  src="/images/PiTauSigmaInitiation_20251114-23f.jpg"
                   alt="Students collaborating"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
