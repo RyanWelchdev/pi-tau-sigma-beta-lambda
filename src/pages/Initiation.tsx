@@ -79,7 +79,7 @@ export default function Initiation() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+            <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-xl">
               <img
                 src="/images/PiTauSigma_20260213-15f.jpg"
                 alt="Pi Tau Sigma initiation group photo"
