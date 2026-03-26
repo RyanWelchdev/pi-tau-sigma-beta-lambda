@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { label: 'About', to: '/about' },
@@ -14,40 +14,37 @@ const navItems = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const linkBase =
-    'text-sm font-semibold transition-colors duration-200';
-  const desktopLink =
-    'text-slate-600 hover:text-slate-900';
-  const activeLink =
-    'text-slate-900';
+  const linkBase = 'text-sm font-semibold transition-colors duration-200';
+  const desktopLink = 'text-slate-600 hover:text-slate-900';
+  const activeLink = 'text-slate-900';
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-22 flex items-center justify-between">
-          {/* Brand */}
           <Link
             to="/"
             className="flex items-center gap-4 shrink-0"
             onClick={() => setMobileOpen(false)}
           >
-            <div className="h-12 w-12 rounded-xl bg-niu-red flex items-center justify-center shadow-sm shrink-0">
-              <GraduationCap className="h-6 w-6 text-white" />
+            <div className="h-14 w-14 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0 overflow-hidden">
+              <img
+                src="/images/crest.png"
+                alt="Pi Tau Sigma crest"
+                className="h-11 w-11 object-contain"
+              />
             </div>
 
             <div className="leading-tight">
-              <div className="flex flex-wrap items-baseline gap-x-2">
-                <span className="text-2xl font-serif font-bold text-slate-950 leading-none">
-                  Pi Tau Sigma
-                </span>
-              </div>
+              <span className="text-2xl font-serif font-bold text-slate-950 leading-none block">
+                Pi Tau Sigma
+              </span>
               <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em] text-niu-red mt-1">
                 Beta Lambda Chapter • NIU
               </p>
             </div>
           </Link>
 
-          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <NavLink
@@ -69,7 +66,6 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          {/* Mobile Toggle */}
           <button
             type="button"
             className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 transition"
@@ -81,7 +77,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-2">
