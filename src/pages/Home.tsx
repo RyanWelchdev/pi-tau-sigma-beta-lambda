@@ -185,7 +185,7 @@ export default function Home() {
                   alt="Pi Tau Sigma initiation group photo"
                   className="w-full h-full object-cover object-[50%_20%]"
                 />
-              </div>
+               </div>
               <div className="absolute -bottom-6 -left-6 bg-niu-red text-white p-8 rounded-xl shadow-xl hidden md:block">
                 <p className="text-4xl font-serif font-bold mb-1">63</p>
                 <p className="text-xs font-bold uppercase tracking-widest opacity-80">
