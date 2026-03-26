@@ -179,11 +179,11 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/images/PiTauSigmaInitiation_20251114-23f.jpg"
                   alt="Pi Tau Sigma initiation group photo"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-[50%_20%]"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-niu-red text-white p-8 rounded-xl shadow-xl hidden md:block">
