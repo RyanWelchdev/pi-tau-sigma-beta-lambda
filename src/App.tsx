@@ -9,6 +9,7 @@ import Officers from './pages/Officers';
 import Alumni from './pages/Alumni';
 import Contact from './pages/Contact';
 import Events from './pages/Events';
+import History from './pages/History';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/alumni" element={<Alumni />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/history" element={<History />} />
           </Routes>
         </main>
         <Footer />
