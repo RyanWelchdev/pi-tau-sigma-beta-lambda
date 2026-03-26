@@ -69,7 +69,7 @@ export default function Home() {
             <img
               src="/images/niu-logo-png_seeklogo-306718.png"
               alt="Northern Illinois University logo"
-              className="h-32 md:h-40 lg:h-44 w-auto object-contain"
+              className="h-36 md:h-44 lg:h-52 w-auto object-contain"
             />
           </div>
         </div>
