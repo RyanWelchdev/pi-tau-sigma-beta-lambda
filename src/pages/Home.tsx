@@ -69,7 +69,7 @@ export default function Home() {
             <img
               src="/images/niu-logo-png_seeklogo-306718.png"
               alt="Northern Illinois University logo"
-              className="h-24 md:h-28 w-auto object-contain"
+              className="h-48 md:h-28 w-auto object-contain"
             />
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function Home() {
                 <img
                   src="/images/PiTauSigmaInitiation_20251114-23f.jpg"
                   alt="Pi Tau Sigma initiation group photo"
-                  className="w-full h-full object-cover object-[52%_35%]"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-niu-red text-white p-8 rounded-xl shadow-xl hidden md:block">
