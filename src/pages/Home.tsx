@@ -179,7 +179,7 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="aspect-[5/4] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[3/2] rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/images/PiTauSigmaInitiation_20251114-23f.jpg"
                   alt="Pi Tau Sigma initiation group photo"
