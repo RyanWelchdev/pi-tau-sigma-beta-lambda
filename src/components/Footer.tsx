@@ -73,9 +73,11 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-niu-red shrink-0" />
                 <span>
-                  NIU College of Engineering
+                  NIU College of Engineering and Engineering Technology
                   <br />
-                  DeKalb, IL 60115
+                  Engineering Building
+                  <br />
+                  590 Garden Rd, DeKalb, IL 60115
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -91,7 +93,7 @@ export default function Footer() {
               <img
                 src="/images/branding-logo-ad560376-5360-18ea-c601-0ff9efc7729f-56599-ceet---ceet-merch-design---front-ceet-logo-vertical-black-on-light-4x3-5.png"
                 alt="Northern Illinois University College of Engineering and Engineering Technology logo"
-                className="h-24 w-auto object-contain bg-white rounded-lg p-2"
+                className="h-32 md:h-40 lg:h-44 w-auto object-contain bg-white rounded-lg p-2"
               />
             </div>
           </div>
