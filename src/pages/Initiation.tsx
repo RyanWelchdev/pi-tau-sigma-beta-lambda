@@ -39,7 +39,6 @@ export default function Initiation() {
 
   return (
     <div className="bg-slate-50 min-h-screen">
-      {/* Header */}
       <section className="bg-slate-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
@@ -57,7 +56,6 @@ export default function Initiation() {
         </div>
       </section>
 
-      {/* Intro with Image */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -96,7 +94,6 @@ export default function Initiation() {
         </div>
       </section>
 
-      {/* Checklist Section */}
       <section className="py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
@@ -133,7 +130,6 @@ export default function Initiation() {
         </div>
       </section>
 
-      {/* Important Notes */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
@@ -152,12 +148,22 @@ export default function Initiation() {
 
           <div className="bg-slate-900 rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl font-serif font-bold mb-6 flex items-center gap-3">
-              <Info className="text-niu-red" /> Semester-Specific Details
+              <Info className="text-niu-red" /> Chapter Symbol
             </h3>
+
+            <div className="bg-white rounded-2xl p-6 mb-6 flex justify-center">
+              <img
+                src="/images/key.png"
+                alt="Pi Tau Sigma key"
+                className="h-40 w-auto object-contain"
+              />
+            </div>
+
             <p className="text-slate-300 mb-6 leading-relaxed">
-              Dates, deadlines, locations, fees, and chapter-specific initiation traditions should
-              be updated each semester only when they are confirmed.
+              The Pi Tau Sigma key is closely associated with membership and initiation, representing
+              both recognition of achievement and connection to the traditions of the honor society.
             </p>
+
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
               <h4 className="font-bold mb-4 text-niu-red uppercase text-xs tracking-widest">
                 Recommended Use of This Page
