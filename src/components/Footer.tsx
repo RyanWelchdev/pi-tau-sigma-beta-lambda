@@ -58,6 +58,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/history" className="hover:text-niu-red transition-colors">
+                  History
+                </Link>
+              </li>
+              <li>
                 <Link to="/alumni" className="hover:text-niu-red transition-colors">
                   Alumni
                 </Link>
