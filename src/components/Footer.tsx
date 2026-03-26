@@ -1,4 +1,4 @@
-import { GraduationCap, Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -7,10 +7,17 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <GraduationCap className="h-8 w-8 text-niu-red" />
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 items-start">
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-14 w-14 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center shrink-0 overflow-hidden">
+                <img
+                  src="/images/crest.png"
+                  alt="Pi Tau Sigma crest"
+                  className="h-11 w-11 object-contain"
+                />
+              </div>
+
               <div>
                 <h3 className="text-xl font-serif font-bold text-white">Pi Tau Sigma</h3>
                 <p className="text-xs font-sans font-semibold text-niu-red uppercase tracking-widest">
@@ -18,6 +25,7 @@ export default function Footer() {
                 </p>
               </div>
             </div>
+
             <p className="max-w-md text-slate-400 leading-relaxed mb-6">
               The Pi Tau Sigma chapter at Northern Illinois University, dedicated to scholarship,
               leadership, integrity, and long-term chapter continuity in mechanical engineering.
@@ -45,6 +53,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/events" className="hover:text-niu-red transition-colors">
+                  Events
+                </Link>
+              </li>
+              <li>
                 <Link to="/alumni" className="hover:text-niu-red transition-colors">
                   Alumni
                 </Link>
@@ -56,7 +69,7 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">
               Contact Info
             </h4>
-            <ul className="space-y-4 text-sm">
+            <ul className="space-y-4 text-sm mb-8">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-niu-red shrink-0" />
                 <span>
@@ -70,6 +83,17 @@ export default function Footer() {
                 <span>Chapter email coming soon</span>
               </li>
             </ul>
+
+            <div className="pt-2">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500 mb-3">
+                NIU Engineering
+              </p>
+              <img
+                src="/images/branding-logo-ad560376-5360-18ea-c601-0ff9efc7729f-56599-ceet---ceet-merch-design---front-ceet-logo-vertical-black-on-light-4x3-5.png"
+                alt="Northern Illinois University College of Engineering and Engineering Technology logo"
+                className="h-24 w-auto object-contain bg-white rounded-lg p-2"
+              />
+            </div>
           </div>
         </div>
 
