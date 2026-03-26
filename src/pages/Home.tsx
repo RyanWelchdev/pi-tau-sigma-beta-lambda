@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Users, Award, BookOpen, CalendarDays } from 'lucide-react';
+import { ArrowRight, Users, Award, CalendarDays } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -10,11 +10,10 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/PiTauSigma_20260213-01f.jpg"
-            alt="Engineering environment"
+            alt="Northern Illinois University engineering building"
             className="w-full h-full object-cover object-[68%_center] opacity-40"
-            referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-900/20"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -28,11 +27,12 @@ export default function Home() {
               Northern Illinois University
             </span>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6">
-              Beta Lambda Chapter of <span className="text-niu-red">Pi Tau Sigma</span>
+              Beta Lambda <br />
+              Chapter of <span className="text-niu-red">Pi Tau Sigma</span>
             </h1>
             <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-              Recognizing academic excellence, leadership, integrity, and sound engineering ability
-              in mechanical engineering students at NIU.
+              Recognizing academic excellence, leadership, integrity, and sound
+              engineering ability in mechanical engineering students at NIU.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/membership" className="btn-primary flex items-center justify-center gap-2">
@@ -46,6 +46,32 @@ export default function Home() {
               </Link>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* NIU Identity Strip */}
+      <section className="py-10 bg-white border-b border-slate-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-niu-red mb-2">
+              Proudly Based At NIU
+            </p>
+            <h2 className="text-2xl font-serif font-bold text-slate-900">
+              Beta Lambda at Northern Illinois University
+            </h2>
+            <p className="text-slate-600 mt-2 max-w-2xl">
+              The Beta Lambda Chapter serves mechanical engineering students at NIU while
+              building a tradition of scholarship, leadership, continuity, and alumni connection.
+            </p>
+          </div>
+
+          <div className="shrink-0">
+            <img
+              src="/images/niu-logo-png_seeklogo-306718.png"
+              alt="Northern Illinois University logo"
+              className="h-16 w-auto object-contain"
+            />
+          </div>
         </div>
       </section>
 
@@ -156,9 +182,8 @@ export default function Home() {
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/images/PiTauSigmaInitiation_20251114-23f.jpg"
-                  alt="Students collaborating"
+                  alt="Pi Tau Sigma initiation group photo"
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-niu-red text-white p-8 rounded-xl shadow-xl hidden md:block">
@@ -172,11 +197,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Symbols & Legacy */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-niu-red mb-3">
+              Chapter Identity
+            </p>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+              Symbols & Legacy
+            </h2>
+            <p className="text-slate-600 max-w-3xl mx-auto">
+              The Beta Lambda Chapter is rooted in both academic recognition and chapter tradition.
+              Its symbols help connect members to Pi Tau Sigma’s identity across generations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
+              <img
+                src="/images/crest.png"
+                alt="Pi Tau Sigma crest"
+                className="h-28 w-auto object-contain shrink-0"
+              />
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-3 text-center md:text-left">
+                  The Crest
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-center md:text-left">
+                  The Pi Tau Sigma crest serves as a formal symbol of the honor society and reflects
+                  the chapter’s connection to the broader national organization.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
+              <img
+                src="/images/key.png"
+                alt="Pi Tau Sigma key"
+                className="h-28 w-auto object-contain shrink-0"
+              />
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-3 text-center md:text-left">
+                  The Key
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-center md:text-left">
+                  The Pi Tau Sigma key is closely tied to membership and initiation, representing
+                  both recognition of achievement and connection to chapter tradition.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats / Legacy Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center">
+            <div className="bg-white border border-slate-200 rounded-2xl p-8 text-center">
               <p className="text-4xl font-serif font-bold text-slate-900 mb-2">2018</p>
               <p className="text-sm uppercase tracking-widest text-slate-500 font-semibold">
                 Founded
@@ -184,7 +263,7 @@ export default function Home() {
               <p className="text-slate-600 mt-4">Beta Lambda was founded on February 24, 2018.</p>
             </div>
 
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center">
+            <div className="bg-white border border-slate-200 rounded-2xl p-8 text-center">
               <p className="text-4xl font-serif font-bold text-slate-900 mb-2">63</p>
               <p className="text-sm uppercase tracking-widest text-slate-500 font-semibold">
                 Total Members & Alumni
@@ -194,7 +273,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center">
+            <div className="bg-white border border-slate-200 rounded-2xl p-8 text-center">
               <p className="text-4xl font-serif font-bold text-slate-900 mb-2">50+</p>
               <p className="text-sm uppercase tracking-widest text-slate-500 font-semibold">
                 Alumni Connections
