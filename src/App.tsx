@@ -8,8 +8,7 @@ import About from './pages/About';
 import Officers from './pages/Officers';
 import Alumni from './pages/Alumni';
 import Contact from './pages/Contact';
-
-// Placeholder components for other pages
+import Events from './pages/Events';
 
 export default function App() {
   return (
@@ -25,6 +24,7 @@ export default function App() {
             <Route path="/officers" element={<Officers />} />
             <Route path="/alumni" element={<Alumni />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/events" element={<Events />} />
           </Routes>
         </main>
         <Footer />
@@ -32,4 +32,3 @@ export default function App() {
     </Router>
   );
 }
-
