@@ -65,11 +65,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="shrink-0 flex justify-center">
+          <div className="shrink-0 flex justify-center md:justify-end w-full md:w-auto">
             <img
               src="/images/niu-logo-png_seeklogo-306718.png"
               alt="Northern Illinois University logo"
-              className="h-96 md:h-28 w-auto"
+              className="h-32 md:h-40 lg:h-44 w-auto object-contain"
             />
           </div>
         </div>
