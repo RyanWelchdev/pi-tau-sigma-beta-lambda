@@ -50,30 +50,21 @@ export default function Home() {
       </section>
 
       {/* NIU Identity Strip */}
-      <section className="py-10 bg-white border-b border-slate-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-niu-red mb-2">
-              Proudly Based At NIU
-            </p>
-            <h2 className="text-2xl font-serif font-bold text-slate-900">
-              Beta Lambda at Northern Illinois University
-            </h2>
-            <p className="text-slate-600 mt-2 max-w-2xl">
-              The Beta Lambda Chapter serves mechanical engineering students at NIU while
-              building a tradition of scholarship, leadership, continuity, and alumni connection.
-            </p>
-          </div>
-
-          <div className="shrink-0 flex justify-center md:justify-end w-full md:w-auto">
-            <img
-              src="/images/niu-logo-png_seeklogo-306718.png"
-              alt="Northern Illinois University logo"
-              className="h-36 md:h-44 lg:h-52 w-auto object-contain"
-            />
-          </div>
-        </div>
-      </section>
+     <section className="py-10 bg-white border-b border-slate-200">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p className="text-xs font-bold uppercase tracking-[0.2em] text-niu-red mb-2">
+      Northern Illinois University
+    </p>
+    <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900">
+      Beta Lambda Chapter of Pi Tau Sigma
+    </h2>
+    <p className="text-slate-600 mt-3 max-w-3xl mx-auto">
+      The Beta Lambda Chapter serves mechanical engineering students at Northern Illinois
+      University while building a tradition of scholarship, leadership, continuity, and
+      alumni connection.
+    </p>
+  </div>
+</section>
 
       {/* Action Cards */}
       <section className="py-24 bg-white">
