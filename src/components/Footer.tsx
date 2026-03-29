@@ -93,13 +93,13 @@ export default function Footer() {
 
             <div className="pt-2">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-slate-500 mb-3">
-                NIU Engineering
+                Chapter Affiliation
               </p>
-              <img
-                src="/images/branding-logo-ad560376-5360-18ea-c601-0ff9efc7729f-56599-ceet---ceet-merch-design---front-ceet-logo-vertical-black-on-light-4x3-5.png"
-                alt="Northern Illinois University College of Engineering and Engineering Technology logo"
-                className="h-32 md:h-40 lg:h-44 w-auto object-contain bg-white rounded-lg p-2"
-              />
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Northern Illinois University
+              <br />
+              Mechanical Engineering
+            </p>
             </div>
           </div>
         </div>
