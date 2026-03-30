@@ -8,6 +8,7 @@ const navItems = [
   { label: 'Initiation', to: '/initiation' },
   { label: 'Events', to: '/events' },
   { label: 'History', to: '/history' },
+  { label: 'Resources', to: '/resources' },
   { label: 'Officers', to: '/officers' },
   { label: 'Alumni', to: '/alumni' },
   { label: 'Contact', to: '/contact' },
