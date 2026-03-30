@@ -23,6 +23,51 @@ export default function History() {
     }
   ];
 
+  const photoCards = [
+    {
+      src: '/images/initiation_spring_2022.jpeg',
+      alt: 'Spring 2022 Pi Tau Sigma initiation group',
+      title: 'Spring 2022',
+      description:
+        'An earlier chapter initiation photo showing the continuity of Beta Lambda’s recognition and tradition.'
+    },
+    {
+      src: '/images/initiation_fall_2022.jpeg',
+      alt: 'Fall 2022 Pi Tau Sigma initiation group',
+      title: 'Fall 2022',
+      description:
+        'A chapter moment preserved as part of the growing visual history of Beta Lambda.'
+    },
+    {
+      src: '/images/initiation_spring_2023.jpg',
+      alt: 'Spring 2023 Pi Tau Sigma initiation group',
+      title: 'Spring 2023',
+      description:
+        'Another milestone in the chapter’s record of initiation, membership, and continuity.'
+    },
+    {
+      src: '/images/initiation_spring_2025.jpeg',
+      alt: 'Spring 2025 Pi Tau Sigma initiation group',
+      title: 'Spring 2025',
+      description:
+        'A more recent chapter photo reflecting the ongoing life of Beta Lambda at NIU.'
+    },
+    {
+      src: '/images/PiTauSigmaInitiation_20251114-23f.jpg',
+      alt: 'Fall 2025 Pi Tau Sigma initiation group',
+      title: 'Fall 2025',
+      description:
+        'A chapter group photo capturing Beta Lambda’s continuing initiation tradition.'
+    },
+    {
+      src: '/images/PiTauSigma_20260213-15f.jpg',
+      alt: 'Spring 2026 Pi Tau Sigma initiation group',
+      title: 'Spring 2026',
+      description:
+        'Another chapter milestone as Beta Lambda continues building its record and legacy.'
+    }
+  ];
+
   return (
     <div className="bg-slate-50 min-h-screen">
       {/* Header */}
@@ -217,45 +262,36 @@ export default function History() {
               Chapter Photos
             </p>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-              Recent Chapter Moments
+              Chapter History Through Initiation Photos
             </h2>
             <p className="text-slate-600 max-w-3xl mx-auto">
-              This page can grow over time into a fuller visual record of Beta Lambda chapter history.
+              These photos help preserve the visible history of Beta Lambda across multiple semesters.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
-              <div className="aspect-[3/2]">
-                <img
-                  src="/images/PiTauSigmaInitiation_20251114-23f.jpg"
-                  alt="Fall 2025 Pi Tau Sigma initiation group"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Fall 2025</h3>
-                <p className="text-slate-600">
-                  A chapter group photo capturing Beta Lambda’s continuing initiation tradition.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
-              <div className="aspect-[3/2]">
-                <img
-                  src="/images/PiTauSigma_20260213-15f.jpg"
-                  alt="Spring 2026 Pi Tau Sigma initiation group"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Spring 2026</h3>
-                <p className="text-slate-600">
-                  Another chapter milestone as Beta Lambda continues building its record and legacy.
-                </p>
-              </div>
-            </div>
+            {photoCards.map((photo, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm"
+              >
+                <div className="aspect-[3/2]">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">{photo.title}</h3>
+                  <p className="text-slate-600">{photo.description}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
