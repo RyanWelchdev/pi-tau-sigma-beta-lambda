@@ -188,59 +188,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Symbols & Legacy */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-niu-red mb-3">
-              Chapter Identity
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-              Symbols & Legacy
-            </h2>
-            <p className="text-slate-600 max-w-3xl mx-auto">
-              The Beta Lambda Chapter is rooted in both academic recognition and chapter tradition.
-              Its symbols help connect members to Pi Tau Sigma’s identity across generations.
-            </p>
-          </div>
+      {/* History & Legacy Teaser */}
+<section className="py-24 bg-white">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p className="text-xs font-bold uppercase tracking-[0.2em] text-niu-red mb-3">
+      Chapter Legacy
+    </p>
+    <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+      Explore the History of Beta Lambda
+    </h2>
+    <p className="text-slate-600 max-w-3xl mx-auto mb-8">
+      Learn more about the chapter’s founding, symbols, milestones, and initiation history
+      as Beta Lambda continues building its long-term legacy at Northern Illinois University.
+    </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
-              <img
-                src="/images/crest.png"
-                alt="Pi Tau Sigma crest"
-                className="h-28 w-auto object-contain shrink-0"
-              />
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-3 text-center md:text-left">
-                  The Crest
-                </h3>
-                <p className="text-slate-600 leading-relaxed text-center md:text-left">
-                  The Pi Tau Sigma crest serves as a formal symbol of the honor society and reflects
-                  the chapter’s connection to the broader national organization.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
-              <img
-                src="/images/key.png"
-                alt="Pi Tau Sigma key"
-                className="h-28 w-auto object-contain shrink-0"
-              />
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-3 text-center md:text-left">
-                  The Key
-                </h3>
-                <p className="text-slate-600 leading-relaxed text-center md:text-left">
-                  The Pi Tau Sigma key is closely tied to membership and initiation, representing
-                  both recognition of achievement and connection to chapter tradition.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="flex justify-center">
+      <Link
+        to="/history"
+        className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-bold text-white hover:bg-slate-800 transition"
+      >
+        View Chapter History <ArrowRight className="h-4 w-4 ml-2" />
+      </Link>
+    </div>
+  </div>
+</section>
 
       {/* Stats / Legacy Section */}
       <section className="py-20 bg-slate-50">
