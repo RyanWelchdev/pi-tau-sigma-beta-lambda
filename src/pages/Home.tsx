@@ -11,7 +11,7 @@ export default function Home() {
           <img
             src="/images/PiTauSigma_20260213-01f.jpg"
             alt="Northern Illinois University engineering building"
-            className="w-full h-full object-cover object-[68%_center] opacity-20"
+            className="w-full h-full object-cover object-[68%_center] opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-900/20"></div>
         </div>
