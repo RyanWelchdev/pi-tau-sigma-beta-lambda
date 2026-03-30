@@ -10,6 +10,7 @@ import Alumni from './pages/Alumni';
 import Contact from './pages/Contact';
 import Events from './pages/Events';
 import History from './pages/History';
+import Resources from './pages/Resources';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/events" element={<Events />} />
             <Route path="/history" element={<History />} />
+            <Route path="/resources" element={<Resources />} />
           </Routes>
         </main>
         <Footer />
