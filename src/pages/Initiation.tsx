@@ -165,16 +165,15 @@ export default function Initiation() {
             </p>
 
             <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-              <h4 className="font-bold mb-4 text-niu-red uppercase text-xs tracking-widest">
-                Recommended Use of This Page
-              </h4>
-              <ul className="space-y-3 text-sm text-slate-300">
-                <li className="flex gap-2"><span>•</span> Keep this page general and stable year to year.</li>
-                <li className="flex gap-2"><span>•</span> Share semester-specific instructions directly with invited candidates.</li>
-                <li className="flex gap-2"><span>•</span> Add dates only when they are final and current.</li>
-                <li className="flex gap-2"><span>•</span> Update or remove old details promptly after each initiation cycle.</li>
-              </ul>
-            </div>
+  <h4 className="font-bold mb-4 text-niu-red uppercase text-xs tracking-widest">
+    Important Note
+  </h4>
+  <p className="text-sm text-slate-300 leading-relaxed">
+    Specific initiation dates, deadlines, and candidate instructions are shared directly
+    with invited students as details are finalized. Candidates should rely on official
+    chapter communication for the most current information.
+  </p>
+</div>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
