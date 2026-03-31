@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { FileText, ShieldCheck, Archive, ExternalLink, FolderOpen } from 'lucide-react';
+import { FileText, ExternalLink, FolderOpen } from 'lucide-react';
 
 export default function Resources() {
   const coreDocuments = [
@@ -17,14 +17,6 @@ export default function Resources() {
       href: '/documents/national-constitution.pdf',
       type: 'PDF'
     }
-  ];
-
-  const futureResources = [
-    'Chapter bylaws or supporting governance documents',
-    'Officer transition guides',
-    'Initiation checklists and semester planning materials',
-    'Election information and chapter forms',
-    'Annual reports or chapter records appropriate for public sharing'
   ];
 
   return (
@@ -99,70 +91,21 @@ export default function Resources() {
         </div>
       </section>
 
-      {/* Public vs Internal */}
+      {/* Additional Note */}
       <section className="py-24 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-white border border-slate-200 rounded-2xl p-8">
-            <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6">
-              <ShieldCheck className="h-6 w-6 text-niu-red" />
-            </div>
-            <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">
-              Public Resources
-            </h3>
-            <p className="text-slate-600 leading-relaxed">
-              This page is best used for documents that are appropriate to share publicly, such as
-              constitutions, chapter overviews, and general information that helps members,
-              prospective candidates, alumni, and visitors understand the chapter.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200 rounded-2xl p-8">
-            <div className="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6">
-              <Archive className="h-6 w-6 text-niu-red" />
-            </div>
-            <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">
-              Internal Chapter Materials
-            </h3>
-            <p className="text-slate-600 leading-relaxed">
-              Internal-only files such as officer transition documents, private member lists,
-              financial records, and planning materials are usually better kept outside the public
-              website in a shared chapter folder system.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Future Expansion */}
-      <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-niu-red mb-3">
-              Future Expansion
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
-              Resources That Can Be Added Later
-            </h2>
-            <p className="text-slate-600 max-w-3xl mx-auto">
-              This page can grow over time as the chapter organizes more public-facing materials.
-            </p>
-          </div>
-
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 md:p-10">
+          <div className="bg-white border border-slate-200 rounded-2xl p-8 md:p-10">
             <div className="flex items-center gap-3 mb-6">
               <FolderOpen className="h-6 w-6 text-niu-red" />
-              <h3 className="text-2xl font-serif font-bold text-slate-900">
-                Possible Additions
-              </h3>
+              <h2 className="text-2xl font-serif font-bold text-slate-900">
+                Public Chapter Materials
+              </h2>
             </div>
-
-            <div className="space-y-4">
-              {futureResources.map((item, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="mt-2 h-2.5 w-2.5 rounded-full bg-niu-red shrink-0"></div>
-                  <p className="text-slate-600 leading-relaxed">{item}</p>
-                </div>
-              ))}
-            </div>
+            <p className="text-slate-600 leading-relaxed">
+              This page is intended for public-facing chapter documents and resources that help
+              members, prospective candidates, alumni, and visitors better understand Beta Lambda
+              and Pi Tau Sigma.
+            </p>
           </div>
         </div>
       </section>
