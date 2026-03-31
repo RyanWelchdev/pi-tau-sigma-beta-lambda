@@ -100,12 +100,10 @@ export default function History() {
               members, officers, and alumni.
             </p>
             <p className="text-slate-600 leading-relaxed mb-5">
-              This page helps preserve the chapter’s story by documenting its founding, growth,
-              symbols, and continuing effort to rebuild chapter records and alumni connections.
+              This page highlights the chapter’s founding, milestones, symbols, and initiation history as part of Beta Lambda’s growing legacy at Northern Illinois University.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              Over time, this page can continue to expand with more milestones, officer history,
-              chapter photos, and notable initiatives.
+              It also reflects the chapter’s continued effort to preserve its story, strengthen continuity, and maintain meaningful connections across generations of members and alumni.
             </p>
           </div>
 
