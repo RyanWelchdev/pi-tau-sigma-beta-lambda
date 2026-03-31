@@ -87,8 +87,8 @@ export default function Events() {
               Featured Events
             </h2>
             <p className="text-slate-600 max-w-3xl mx-auto">
-              This page can be updated each semester as chapter meetings, elections, initiation,
-              and other events are finalized.
+              This page highlights chapter activity, recurring semester events, and important 
+              points of engagement for Beta Lambda members and visitors.
             </p>
           </div>
 
@@ -141,8 +141,8 @@ export default function Events() {
               Typical Chapter Timeline
             </h2>
             <p className="text-slate-600 max-w-3xl mx-auto">
-              This section gives the site a stable calendar structure even when specific dates are
-              still being finalized.
+              This section provides a general view of the kinds of chapter activity that may take 
+              place across a typical semester.
             </p>
           </div>
 
@@ -175,12 +175,13 @@ export default function Events() {
           <div className="bg-slate-900 rounded-2xl p-8 md:p-10 text-white">
             <h3 className="text-2xl font-serif font-bold mb-6 flex items-center gap-3">
               <Megaphone className="text-niu-red" />
-              Keeping This Page Current
+              Event Information
             </h3>
             <p className="text-slate-300 leading-relaxed mb-5">
-              This page works best when it is updated once dates, times, and locations are
-              confirmed. A simple event list is easier to maintain than a complex calendar and is
-              more realistic for year-to-year chapter continuity.
+              Event details may change throughout the semester as chapter plans are finalized. 
+              Members, invited candidates, and visitors should also refer to official chapter 
+              communication for the most current event information, especially for meetings, 
+              initiation-related activities, and special chapter updates.
             </p>
             <ul className="space-y-3 text-sm text-slate-300">
               <li className="flex gap-2"><span>•</span> Add specific dates only when they are confirmed.</li>
