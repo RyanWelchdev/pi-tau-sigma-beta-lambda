@@ -139,21 +139,16 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-14">
           <div>
             <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6">
-              What This Website Is For
+              What This Website Provides
             </h2>
             <p className="text-slate-600 leading-relaxed mb-4">
-              This site is intended to be more than a simple student organization page. It serves
-              as a public-facing home for the chapter and as a continuity tool that helps future
-              officers maintain accurate information and organized records.
+              This website serves as a public home for the Beta Lambda Chapter of Pi Tau Sigma at Northern Illinois University.
             </p>
             <p className="text-slate-600 leading-relaxed mb-4">
-              It is designed to help students understand eligibility and initiation, provide a
-              clear picture of chapter leadership, support alumni reconnection, and preserve
-              important documents and chapter history over time.
+              It is intended to help students, members, alumni, and visitors learn about the chapter’s purpose, membership, leadership, events, history, and public resources.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              It also helps communicate the chapter’s mission, officer structure, membership
-              information, and long-term commitment to continuity at NIU.
+              It also supports the chapter’s effort to maintain a clear and lasting record of its growth, traditions, and ongoing development over time.
             </p>
           </div>
 
