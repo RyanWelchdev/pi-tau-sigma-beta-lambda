@@ -49,18 +49,13 @@ export default function Contact() {
               Best Way to Reach the Chapter
             </h2>
             <p className="text-slate-600 leading-relaxed mb-5">
-              The best long-term setup is a shared chapter email account that can be passed from one
-              officer team to the next. That keeps communication organized and avoids tying the website
-              too closely to one student’s personal email.
+              The Beta Lambda Chapter can be contacted for questions related to membership, initiation, alumni outreach, chapter information, and general inquiries.
             </p>
             <p className="text-slate-600 leading-relaxed mb-5">
-              If your chapter email is already active, replace the placeholder contact information on
-              this page with the official address. If not, this page can still serve as a clear public
-              contact hub while the chapter finalizes its communication system.
+              The chapter’s preferred public contact method should be used for communication so inquiries can be directed appropriately and maintained from year to year.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              For privacy and continuity, it is usually best to share official chapter contact methods
-              rather than personal phone numbers.
+              As chapter communication systems continue to develop, this page may be updated with additional public contact options when appropriate.
             </p>
           </div>
 
@@ -68,21 +63,21 @@ export default function Contact() {
             <div className="flex items-center gap-3 mb-5">
               <ShieldCheck className="h-6 w-6 text-niu-red" />
               <h3 className="text-2xl font-serif font-bold text-slate-900">
-                Recommended Public Contact Setup
+                Chapter Contact Information
               </h3>
             </div>
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
                 <span className="font-semibold text-slate-900">Chapter Email:</span>{' '}
-                ptsbetalambda@niu.edu
+                Chapter email coming soon
               </p>
               <p>
                 <span className="font-semibold text-slate-900">Faculty Advisor:</span>{' '}
-                Add advisor contact here if you want it publicly listed.
+                Faculty advisor information may be listed here when appropriate for public contact.
               </p>
               <p>
                 <span className="font-semibold text-slate-900">Forms:</span>{' '}
-                Add membership interest, alumni update, or election forms here as they become available.
+                Public forms may be added here once they are finalized and in active use.
               </p>
             </div>
           </div>
@@ -125,8 +120,7 @@ export default function Contact() {
             Ready to get in touch?
           </h2>
           <p className="text-slate-600 leading-relaxed mb-8">
-            You can update this section with your final chapter email, a faculty advisor contact,
-            or public forms once those are ready.
+            Additional public contact options may be added as the chapter’s communication system continues to develop.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -145,8 +139,7 @@ export default function Contact() {
           </div>
 
           <p className="mt-6 text-xs text-slate-400 italic max-w-2xl mx-auto">
-            Replace the placeholder email on this page with the chapter’s preferred long-term contact
-            address if a different one is being used.
+            Chapter email coming soon
           </p>
         </div>
       </section>
