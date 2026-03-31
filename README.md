@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Pi Tau Sigma Beta Lambda Chapter Website
 
-# Run and deploy your AI Studio app
+This repository contains the website for the **Beta Lambda Chapter of Pi Tau Sigma** at **Northern Illinois University**.
 
-This contains everything you need to run your app locally.
+## Purpose
 
-View your app in AI Studio: https://ai.studio/apps/077a6804-cbca-4c90-a12c-ab96893ce87b
+This website serves as a public-facing home for the chapter and supports:
 
-## Run Locally
+- chapter visibility and credibility
+- membership and initiation information
+- events and chapter updates
+- officer and alumni information
+- chapter history and legacy
+- public-facing chapter resources
 
-**Prerequisites:**  Node.js
+## Important Note for Future Officers
 
+This GitHub repository is only one part of the website system.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The **main transition and maintenance documents** are stored in the Pi Tau Sigma Microsoft Teams files under:
+
+```text
+00 START HERE
