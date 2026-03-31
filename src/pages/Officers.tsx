@@ -74,7 +74,7 @@ export default function Officers() {
               Current Officer Team
             </h2>
             <p className="text-slate-600 max-w-3xl mx-auto">
-              This roster can be updated each academic year as officer roles and photos change.
+              The current officer team helps guide chapter operations, communication, continuity, and member support.
             </p>
           </div>
 
@@ -143,8 +143,7 @@ export default function Officers() {
               one academic year to the next.
             </p>
             <p className="text-slate-600 leading-relaxed">
-              This page is designed so future officer teams can easily update names, photos, and
-              roles without rebuilding the entire layout.
+              A clear officer structure helps strengthen communication, preserve continuity, and support the long-term health of the chapter.
             </p>
           </div>
 
