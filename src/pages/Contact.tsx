@@ -69,7 +69,7 @@ export default function Contact() {
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
                 <span className="font-semibold text-slate-900">Chapter Email:</span>{' '}
-                Chapter email coming soon
+                ptsbetalambda@gmail.com
               </p>
               <p>
                 <span className="font-semibold text-slate-900">Faculty Advisor:</span>{' '}
