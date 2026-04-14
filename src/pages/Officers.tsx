@@ -30,7 +30,7 @@ const officers = [
   {
     name: 'Matthew Smalley',
     role: 'Treasurer',
-    image: /images/officers/2025-2026/Treasurer-Matt.jpg,
+    image: '/images/officers/2025-2026/Treasurer-Matt.jpg',
     description:
       'Oversees financial matters, dues-related coordination, and chapter financial organization.',
     icon: <Wallet className="h-5 w-5 text-niu-red" />
