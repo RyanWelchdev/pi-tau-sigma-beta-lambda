@@ -139,7 +139,7 @@ export default function Contact() {
           </div>
 
           <p className="mt-6 text-xs text-slate-400 italic max-w-2xl mx-auto">
-            Chapter email coming soon
+            ptsbetalambda@gmail.com
           </p>
         </div>
       </section>
