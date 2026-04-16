@@ -72,8 +72,8 @@ export default function Contact() {
                 ptsbetalambda@gmail.com
               </p>
               <p>
-                <span className="font-semibold text-slate-900">Faculty Advisor:</span>{' '}
-                Faculty advisor information may be listed here when appropriate for public contact.
+                <span className="font-semibold text-slate-900">Faculty Advisor: Nicholas A. Pohlman, Ph.D.</span>{' '}
+                	npohlman@niu.edu
               </p>
               <p>
                 <span className="font-semibold text-slate-900">Forms:</span>{' '}
